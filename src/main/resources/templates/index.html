@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Application 2</title>
+</head>
+<body>
+	<div>
+		<form th:action="${@environment.getProperty('app1url')}" method="post">
+			<textarea name="msg" cols="40" rows="2"></textarea>
+			<br> <input type="submit" value="Save Message" />
+		</form>
+	</div>
+</body>
+</html>
